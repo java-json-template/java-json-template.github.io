@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://java-json-template.github.io/sitemap.xml
