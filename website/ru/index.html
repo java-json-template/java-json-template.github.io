@@ -39,7 +39,7 @@
       <button class="icon-button" id="theme-toggle" type="button" aria-label="Переключить цветовую тему">
         <span class="theme-icon" aria-hidden="true">◐</span>
       </button>
-      <a class="button button-compact button-ghost" href="https://github.com/sibmaks/jjtemplate">GitHub ↗</a>
+      <a class="button button-compact button-ghost" href="https://github.com/java-json-template/jjtemplate">GitHub ↗</a>
       <button class="menu-button" id="menu-button" type="button" aria-expanded="false" aria-controls="mobile-nav">
         <span></span><span></span><span></span><span class="sr-only">Открыть навигацию</span>
       </button>
@@ -59,13 +59,13 @@
   <main id="content">
     <section class="hero" id="top">
       <div class="hero-copy">
-        <div class="eyebrow"><span class="status-dot"></span> Java 11+ · v1.0.0 · JSON-совместимый результат</div>
+        <div class="eyebrow"><span class="status-dot"></span> Java 11+ · v1.0.2 · JSON-совместимый результат</div>
         <h1>Шаблоны, которые остаются<br><span>близкими к данным.</span></h1>
         <p class="hero-lead"><strong>JJT</strong> означает <strong>Java JSON Template</strong>: компактный язык шаблонов,
           который компилирует JSON-документы в оптимизированные деревья выражений для быстрого повторного рендеринга.</p>
         <div class="hero-actions">
           <a class="button button-primary" href="#quick-start">Начать <span aria-hidden="true">↓</span></a>
-          <a class="button button-ghost" href="https://github.com/sibmaks/jjtemplate-plugin">Плагин IDEA ↗</a>
+          <a class="button button-ghost" href="https://github.com/java-json-template/jjtemplate-plugin">Плагин IDEA ↗</a>
         </div>
         <div class="hero-facts" aria-label="Преимущества проекта">
           <div><strong>Одна компиляция</strong><span>Повторное использование шаблона</span></div>
@@ -115,14 +115,14 @@
             <button class="tab" type="button" role="tab" aria-selected="false" data-tab-group="install" data-tab="maven">Maven</button>
           </div>
           <div class="tab-panel is-active" data-tab-panel="install:gradle">
-            <pre id="gradle-install"><code>implementation(<span class="tok-string">"io.github.sibmaks.jjtemplate:jjtemplate:1.0.0"</span>)</code></pre>
+            <pre id="gradle-install"><code>implementation(<span class="tok-string">"io.github.sibmaks.jjtemplate:jjtemplate:1.0.2"</span>)</code></pre>
             <button class="copy-button floating-copy" data-copy-target="gradle-install" type="button">Копировать</button>
           </div>
           <div class="tab-panel" data-tab-panel="install:maven">
             <pre id="maven-install"><code><span class="tok-punc">&lt;dependency&gt;</span>
   <span class="tok-punc">&lt;groupId&gt;</span>io.github.sibmaks.jjtemplate<span class="tok-punc">&lt;/groupId&gt;</span>
   <span class="tok-punc">&lt;artifactId&gt;</span>jjtemplate<span class="tok-punc">&lt;/artifactId&gt;</span>
-  <span class="tok-punc">&lt;version&gt;</span>1.0.0<span class="tok-punc">&lt;/version&gt;</span>
+  <span class="tok-punc">&lt;version&gt;</span>1.0.2<span class="tok-punc">&lt;/version&gt;</span>
   <span class="tok-punc">&lt;type&gt;</span>pom<span class="tok-punc">&lt;/type&gt;</span>
 <span class="tok-punc">&lt;/dependency&gt;</span></code></pre>
             <button class="copy-button floating-copy" data-copy-target="maven-install" type="button">Копировать</button>
@@ -176,7 +176,7 @@
       </div>
       <div class="callout">
         <span class="callout-icon" aria-hidden="true">!</span>
-        <div><strong>Явно отмечайте ключи-выражения.</strong><p>Ключи definitions для <code>switch</code> и <code>range</code> используют те же разделители <code>{{ ... }}</code>, что и другие выражения.</p></div>
+        <div><strong>Явно отмечайте ключи-выражения.</strong><p>Ключи definitions для <code>switch</code> и <code>range</code> используют те же разделители <code>{{ ... }}</code>, что и другие выражения.</p><p>В <code>{{ key switch .someEnum }}</code> значение enum совпадает с ключом ветки, например <code>VALUE_A</code>, по <code>Enum.name()</code> с учётом регистра. Преобразование через <code>cast:str</code> не требуется; для запасной ветки используйте <code>{{ else }}</code>.</p></div>
       </div>
     </section>
 
@@ -327,7 +327,7 @@
       <div class="api-note">
         <div><span class="badge">Политика 1.0</span><h3>Совместимость входит в release gate.</h3></div>
         <p>Поддерживаемые API lexer, parser, compiler, runtime, exceptions и functions проверяются относительно опубликованного baseline.</p>
-        <a class="text-link" href="https://github.com/sibmaks/jjtemplate/blob/main/API_COMPATIBILITY.md">Открыть политику →</a>
+        <a class="text-link" href="https://github.com/java-json-template/jjtemplate/blob/main/API_COMPATIBILITY.md">Открыть политику →</a>
       </div>
     </section>
 
@@ -336,18 +336,18 @@
       <h2>Оставьте шаблон читаемым.<br><span>Остальное сделает компилятор.</span></h2>
       <div class="hero-actions">
         <a class="button button-primary" href="#quick-start">Открыть быстрый старт</a>
-        <a class="button button-ghost" href="https://github.com/sibmaks/jjtemplate">Исходный код ↗</a>
+        <a class="button button-ghost" href="https://github.com/java-json-template/jjtemplate">Исходный код ↗</a>
       </div>
     </section>
   </main>
 
   <footer>
     <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">{ }</span><span>JJTemplate</span></a>
-    <p><a href="https://github.com/sibmaks/jjtemplate/releases/tag/v1.0.0">v1.0.0</a> · Java JSON Template · Apache-2.0</p>
+    <p><a href="https://github.com/java-json-template/jjtemplate/releases/tag/v1.0.2">v1.0.2</a> · Java JSON Template · Apache-2.0</p>
     <nav aria-label="Навигация в подвале">
-      <a href="https://github.com/sibmaks/jjtemplate">Репозиторий</a>
-      <a href="https://github.com/sibmaks/jjtemplate-plugin">Плагин IDEA</a>
-      <a href="https://github.com/sibmaks/jjtemplate/blob/main/README.ru.md">README на русском</a>
+      <a href="https://github.com/java-json-template/jjtemplate">Репозиторий</a>
+      <a href="https://github.com/java-json-template/jjtemplate-plugin">Плагин IDEA</a>
+      <a href="https://github.com/java-json-template/jjtemplate/blob/main/README.ru.md">README на русском</a>
     </nav>
   </footer>
 </body>
